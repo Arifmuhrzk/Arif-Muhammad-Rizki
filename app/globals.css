@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
+  --color-paper: #f4f0e7;
+  --color-ink: #1b1916;
+  --color-muted: #645d54;
+  --color-line: #ddd4c6;
+  --color-accent: #9d3418;
+  --color-chip: #ebe3d6;
+  --color-chip-on: #1b1916;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  overflow-x: clip;
+}
+
+::selection {
+  background: #1b1916;
+  color: #f4f0e7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
